@@ -3,12 +3,16 @@
 
 This game was created to help me practice using C++ over my winter break. It isn't perfect, and that's the point. As I continue learning C++, I plan on optimizing the game and making the code more clear and concise as I go. Feel free to fork this repository and edit the game how you please.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cedricium/TicTacToe/master/img/TicTacToe-v1.gif">
+</p>
+
 ## Installation
 1. Clone or download this repository to your local machine.
 2. Open your terminal or command-line interface and change directories to the cloned/downloaded repository.
 
     ```Bash
-    cd /cedricium/TicTacToe/
+    cd /TicTacToe/
     ```
 
 3. Run the executable file, TicTacToe.exe
