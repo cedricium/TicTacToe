@@ -12,7 +12,7 @@ This game was created to help me practice using C++ over my winter break. It isn
 2. Open your terminal or command-line interface and change directories to the cloned/downloaded repository.
 
     ```Bash
-    cd /cedricium/TicTacToe/
+    cd /TicTacToe/
     ```
 
 3. Run the executable file, TicTacToe.exe
