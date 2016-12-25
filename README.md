@@ -1,2 +1,2 @@
 # TicTacToe
-A fun, 2-player Terminal.app game written in C++.
+## Three in a row: a fun, two player Terminal-based game written in C++.
