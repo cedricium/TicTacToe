@@ -40,7 +40,7 @@ This game was created to help me practice using C++ over my winter break. It isn
 - [ ] prevention of overriding previously-selected spots
 - [ ] game ending when a 'Draw' occurs
 - [ ] different game modes [SEE BELOW]
-  - [ ] User v. CPU mode (with varying degrees of difficulty)
+  - [ ] User v. CPU (with varying degrees of difficulty)
   - [x] User v. User (the current mode)
 - [ ] larger game board / graphics included
 - [ ] score keeping function
