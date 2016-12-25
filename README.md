@@ -39,3 +39,4 @@ This game was created to help me practice using C++ over my winter break. It isn
   - [ ] User v. CPU mode (with varying degrees of difficulty)
   - [x] User v. User (the current mode)
 - [ ] larger game board / graphics included
+- [ ] score keeping function
