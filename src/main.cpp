@@ -47,6 +47,7 @@ void togglePlayer()
 
 char win()
 {
+    // check for horizontal wins
     if (matrix[0][0] == 'X' && matrix[0][1] == 'X' && matrix[0][2] == 'X')
         return 'X';
     if (matrix[1][0] == 'X' && matrix[1][1] == 'X' && matrix[1][2] == 'X')
@@ -54,6 +55,7 @@ char win()
     if (matrix[2][0] == 'X' && matrix[2][1] == 'X' && matrix[2][2] == 'X')
         return 'X';
     
+    // check for vertical wins
     if (matrix[0][0] == 'X' && matrix[1][0] == 'X' && matrix[2][0] == 'X')
         return 'X';
     if (matrix[0][1] == 'X' && matrix[1][1] == 'X' && matrix[2][1] == 'X')
@@ -61,12 +63,13 @@ char win()
     if (matrix[0][2] == 'X' && matrix[1][2] == 'X' && matrix[2][2] == 'X')
         return 'X';
     
+    // check for diagonal wins
     if (matrix[0][0] == 'X' && matrix[1][1] == 'X' && matrix[2][2] == 'X')
         return 'X';
     if (matrix[2][0] == 'X' && matrix[1][1] == 'X' && matrix[0][2] == 'X')
         return 'X';
     
-    
+    // check for horizontal wins
     if (matrix[0][0] == 'O' && matrix[0][1] == 'O' && matrix[0][2] == 'O')
         return 'O';
     if (matrix[1][0] == 'O' && matrix[1][1] == 'O' && matrix[1][2] == 'O')
@@ -74,6 +77,7 @@ char win()
     if (matrix[2][0] == 'O' && matrix[2][1] == 'O' && matrix[2][2] == 'O')
         return 'O';
     
+    // check for vertical wins
     if (matrix[0][0] == 'O' && matrix[1][0] == 'O' && matrix[2][0] == 'O')
         return 'O';
     if (matrix[0][1] == 'O' && matrix[1][1] == 'O' && matrix[2][1] == 'O')
@@ -81,6 +85,7 @@ char win()
     if (matrix[0][2] == 'O' && matrix[1][2] == 'O' && matrix[2][2] == 'O')
         return 'O';
     
+    // check for diagonal wins
     if (matrix[0][0] == 'O' && matrix[1][1] == 'O' && matrix[2][2] == 'O')
         return 'O';
     if (matrix[2][0] == 'O' && matrix[1][1] == 'O' && matrix[0][2] == 'O')
