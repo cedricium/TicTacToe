@@ -7,10 +7,29 @@
 //
 
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 char matrix[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 char player = 'X';
+int turns = 0;
+
+int menu()
+{
+    int usrChoice;
+    
+    cout << "Tic Tac Toe - v1.0" << endl << endl;
+    cout << "    MENU:    " << endl << "1. User v. User" << endl << "2. Quit" << endl;
+    
+    
+    cout << endl << "Select an option: ";
+    cin >> usrChoice;
+    
+    if (usrChoice == 1)
+        return 1;
+    else
+        return 0;
+}
 
 void draw()
 {
@@ -43,6 +62,8 @@ void togglePlayer()
         player = 'O';
     else
         player = 'X';
+    
+    turns++;
 }
 
 char win()
@@ -94,25 +115,51 @@ char win()
     return '/';
 }
 
+bool checkForTie()
+{
+    if (turns == 9 && win() == '/')
+    {
+        cout << endl << "It's a tie!" << endl;
+        return true;
+    }
+    else
+        return false;
+}
+
 int main()
 {
-    draw();
-    while (true)
+    if (menu() == 1)
     {
-        input();
         draw();
-        
-        if (win() == 'X')
+        while (true)
         {
-            cout << endl << "X wins!" << endl;
-            break;
+            input();
+            draw();
+            
+            if (win() == 'X')
+            {
+                cout << endl << "X wins!" << endl;
+                break;
+            }
+            else if (win() == 'O')
+            {
+                cout << endl << "O wins!" << endl;
+                break;
+            }
+            
+            togglePlayer();
+            
+            if (checkForTie() == true)
+                break;
+            else
+                continue;
         }
-        else if (win() == 'O')
-        {
-            cout << endl << "O wins!" << endl;
-            break;
-        }
-        togglePlayer();
+    }
+    
+    else
+    {
+        cout << "\033[2J\033[1;1H";
+        cout << "Thanks for playing!" << endl;
     }
     
     return 0;
