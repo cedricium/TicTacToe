@@ -15,13 +15,14 @@ This game was created to help me practice using C++ over my winter break. It isn
     cd /TicTacToe/
     ```
 
-3. Run the executable file, TicTacToe.exe
+3. Invoke the `make` command while in the root /TicTacToe/ directory.
+4. Run the newly created executable file, "TicTacToe".
 
     ```Bash
-    ./TicTacToe
+    ./TicTacToe 
     ```
-    
-4. Grab a friend and enjoy!
+
+5. Grab a friend and enjoy!
 
 **NOTE:** This game was written and tested using MacOS, however, any other operating system's terminal or command-line should be able to execute the game without fault.
 
