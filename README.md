@@ -35,6 +35,7 @@ This game was created to help me practice using C++ over my winter break. It isn
 
 ## Change Log
 `v1.0` - Initial game creation and setup - [@cedricium](github.com/cedricium/)
+
 `v1.1` - New features: main menu, game ending in a tie, and makefile for easier setup - [@cedricium](github.com/cedricium/)
 
 ## Planned Updates
