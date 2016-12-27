@@ -18,7 +18,7 @@ int menu()
 {
     int usrChoice;
     
-    cout << "Tic Tac Toe - v1.0" << endl << endl;
+    cout << "Tic Tac Toe - v1.1.0" << endl << endl;
     cout << "    MENU:    " << endl << "1. User v. User" << endl << "2. Quit" << endl;
     
     
@@ -34,7 +34,7 @@ int menu()
 void draw()
 {
     cout << "\033[2J\033[1;1H";
-    cout << "Tic Tac Toe - v1.0" << endl << endl;
+    cout << "Tic Tac Toe - v1.1.0" << endl << endl;
     
     for (int i = 0; i < 3; i++)
     {
