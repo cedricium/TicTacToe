@@ -39,6 +39,8 @@ This game was created to help me practice using C++ over my winter break. It isn
 
 `v1.1.0` - New features: main menu, game ending in a tie, and makefile for easier setup - [@cedricium](github.com/cedricium/)
 
+**NOTE:** view the [CHANGELOG.md](https://github.com/cedricium/TicTacToe/blob/new_features/CHANGELOG.md) to see detailed changes and revisions.
+
 ## Planned Updates
 - [ ] prevention of overriding previously-selected spots
 - [ ] game ending when a 'Draw' occurs
