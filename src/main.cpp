@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include <unistd.h>
+#include <cctype>
 using namespace std;
 
 char matrix[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
@@ -18,7 +18,7 @@ int menu()
 {
     int usrChoice;
     
-    cout << "Tic Tac Toe - v1.1.0" << endl << endl;
+    cout << "Tic Tac Toe - v1.2.0" << endl << endl;
     cout << "    MENU:    " << endl << "1. User v. User" << endl << "2. Quit" << endl;
     
     
@@ -34,7 +34,7 @@ int menu()
 void draw()
 {
     cout << "\033[2J\033[1;1H";
-    cout << "Tic Tac Toe - v1.1.0" << endl << endl;
+    cout << "Tic Tac Toe - v1.2.0" << endl << endl;
     
     for (int i = 0; i < 3; i++)
     {
@@ -48,12 +48,28 @@ void draw()
 
 void input()
 {
-    int a;
+    int userInput;
     cout << endl << "Press the number that goes with the corresponding field: ";
-    cin >> a;
     
-    a--;
-    matrix[a/3][a%3] = player;
+    while (true)
+    {
+        cin >> userInput;
+        
+        userInput--;
+        
+        // checks to see if selected position is a number - if not, then its already been taken
+        // and player must select another position
+        if (isdigit(matrix[userInput/3][userInput%3]))
+        {
+            matrix[userInput/3][userInput%3] = player;
+            break;
+        }
+        else
+        {
+            cout << "Try another spot: ";
+            continue;
+        }
+    }
 }
 
 void togglePlayer()

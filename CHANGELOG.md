@@ -20,3 +20,14 @@ All notable changes to this project will be kept in this document.
 ### Changed
  - README.md Installation Steps
    - Installation instructions changed in order to reflect the correct way to run the game using the above makefile
+
+## [1.2.0]
+
+### Added
+ - Prevention of overriding previously-selected positions
+
+### Changed
+ - src/main.cpp
+   - Removed `unistd.h` since it was unused
+   - In the `input()` function, changed the variable `int a` to `int userInput` for clarification
+
