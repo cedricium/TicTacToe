@@ -24,7 +24,7 @@ This game was created to help me practice using C++ over my winter break. It isn
 
 5. Grab a friend and enjoy!
 
-**NOTE:** This game was written and tested using MacOS, however, any other operating system's terminal or command-line should be able to execute the game without fault.
+**NOTE:** This game was written and tested using macOS, and with the inclusion of the makefile, compilation and executing the program will only work on UNIX and Linux based computers at this time.
 
 ## Contributing
 1. Fork it!
