@@ -41,6 +41,8 @@ This game was created to help me practice using C++ over my winter break. It isn
 
 `v1.2.0` - New feature: prevention of overriding previously-selected spots - [@cedricium](github.com/cedricium/)
 
+`v1.3.0` - New features: multiple games to be played in a row and score-keeping functionality - [@cedricium](github.com/cedricium/)
+
 **NOTE:** view the [CHANGELOG.md](https://github.com/cedricium/TicTacToe/blob/new_features/CHANGELOG.md) to see detailed changes and revisions.
 
 ## Planned Updates
@@ -50,4 +52,4 @@ This game was created to help me practice using C++ over my winter break. It isn
   - [ ] User v. CPU (with varying degrees of difficulty)
   - [x] User v. User (the current mode)
 - [ ] larger game board / graphics included
-- [ ] score keeping function
+- [x] score keeping function

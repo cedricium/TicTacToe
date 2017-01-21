@@ -31,3 +31,13 @@ All notable changes to this project will be kept in this document.
    - Removed `unistd.h` since it was unused
    - In the `input()` function, changed the variable `int a` to `int userInput` for clarification
 
+## [1.3.0]
+
+### Added
+ - Display of who's turn it is
+ - Score-keeping functionality
+ - Allow for multiple games to be played in a row
+
+### Changed
+ - src/main.cpp
+   - Added comments to code for better readability
